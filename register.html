@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register - Journey Junction</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header (same across site) -->
+
+  <main class="container section">
+    <section class="hero bg-cover" style="background-image: linear-gradient(180deg, rgba(3,10,34,0.45), rgba(3,10,34,0.45)), url('images/jaipur_escape.jpg');">
+      <div class="hero-inner">
+        <h1>Create Your Account</h1>
+        <p>Join Journey Junction to save itineraries, reviews and more.</p>
+      </div>
+    </section>
+
+    <section style="margin:28px 0;">
+      <div class="form-card">
+        <h2 style="margin-bottom:8px">Register</h2>
+        <form id="registerForm" style="display:grid;gap:10px;">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Minimum 6 characters" minlength="6" required>
+
+          <button class="btn" type="submit">Create Account</button>
+          <p style="margin-top:6px">Already have an account? <a href="login.html" style="text-decoration:underline;color:var(--primary)">Login</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">© 2025 Journey Junction</div></footer>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Demo register — replace with real backend integration later.');
+    });
+  </script>
+</body>
+</html>

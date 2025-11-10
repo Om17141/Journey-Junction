@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Journey Junction</title>
+
+  <!-- Fonts (put BEFORE css) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header (use the same header you added to other pages) -->
+  <!-- If you didn't, add the header snippet I provided earlier here -->
+
+  <main class="container section">
+    <!-- Hero for auth pages: small -->
+    <section class="hero bg-cover" style="background-image: linear-gradient(180deg, rgba(3,10,34,0.45), rgba(3,10,34,0.45)), url('images/header_background.webp.jpg');">
+      <div class="hero-inner">
+        <h1>Login to Continue</h1>
+        <p>Access personalised features — save favourites and plan trips.</p>
+      </div>
+    </section>
+
+    <!-- Form card -->
+    <section style="margin:28px 0;">
+      <div class="form-card">
+        <h2 style="margin-bottom:10px">Welcome back</h2>
+        <form id="loginForm" style="display:grid;gap:10px;">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter password" required>
+
+          <div style="display:flex;gap:12px;align-items:center">
+            <button class="btn" type="submit">Login</button>
+            <a href="register.html" style="margin-left:6px;color:var(--primary);font-weight:700;text-decoration:underline">Create account</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">© 2025 Journey Junction</div>
+  </footer>
+
+  <!-- small script to keep page friendly (optional, remove if backend not present) -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('This is a demo login. Replace with real API call when backend is ready.');
+    });
+  </script>
+</body>
+</html>

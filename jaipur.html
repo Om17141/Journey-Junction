@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jaipur — Journey Junction</title>
+  <meta name="description" content="Discover Jaipur: Hawa Mahal, Amber Fort, City Palace and more.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body class="page-jaipur">
+  <div id="loader"></div>
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="brand"><img src="images/logo.png" alt="Journey Junction logo"><h1>Journey Junction</h1></div>
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="jaipur.html" aria-current="page">Jaipur</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <section class="hero jaipur-hero" style="background-image:url('images/jaipur-hero.jpg');">
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="hero-inner container">
+      <h2>Discover the Pink City</h2>
+      <p class="lead">Welcome to Jaipur — immerse in rich history, colorful bazaars and splendid palaces.</p>
+      <a class="btn" href="#attractions">Explore attractions</a>
+    </div>
+    <div class="scroll-down" aria-hidden="true">↓</div>
+  </section>
+
+  <main>
+    <section id="attractions" class="section container">
+      <h2 class="center">Must-See Attractions</h2>
+      <p class="lead center">Highlights from Jaipur — brief descriptions and why to visit.</p>
+
+      <div class="grid">
+        <article class="card">
+          <img src="images/hawa-mahal.jpg" alt="Hawa Mahal facade" loading="lazy" width="1200" height="675">
+          <div class="card-body">
+            <h3>Hawa Mahal</h3>
+            <p>The 'Palace of Winds' with dozens of small windows — great for photos and history lovers.</p>
+            <a class="cta" href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank" rel="noopener">More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/amber-fort.jpg" alt="Amber Fort" loading="lazy" width="1200" height="675">
+          <div class="card-body">
+            <h3>Amber Fort</h3>
+            <p>A hilltop fort offering panoramic views and Rajput architecture.</p>
+            <a class="cta" href="https://en.wikipedia.org/wiki/Amber_Fort" target="_blank" rel="noopener">More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/city-palace.jpg" alt="City Palace" loading="lazy" width="1200" height="675">
+          <div class="card-body">
+            <h3>City Palace</h3>
+            <p>Lavish palaces and museums showcasing Jaipur's royal heritage.</p>
+            <a class="cta" href="https://en.wikipedia.org/wiki/City_Palace,_Jaipur" target="_blank" rel="noopener">More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/jantar-mantar.jpg" alt="Jantar Mantar" loading="lazy" width="1200" height="675">
+          <div class="card-body">
+            <h3>Jantar Mantar</h3>
+            <p>Historical astronomical instruments and UNESCO-listed site.</p>
+            <a class="cta" href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur" target="_blank" rel="noopener">More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/jal-mahal.jpg" alt="Jal Mahal" loading="lazy" width="1200" height="675">
+          <div class="card-body">
+            <h3>Jal Mahal</h3>
+            <p>Photogenic water palace in Man Sagar Lake — best at sunrise or sunset.</p>
+            <a class="cta" href="https://en.wikipedia.org/wiki/Jal_Mahal" target="_blank" rel="noopener">More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/nahargarh.jpg" alt="Nahargarh Fort" loading="lazy" width="1200" height="675">
+          <div class="card-body">
+            <h3>Nahargarh Fort</h3>
+            <p>Panoramic viewpoint to watch Jaipur glow at night.</p>
+            <a class="cta" href="https://en.wikipedia.org/wiki/Nahargarh_Fort" target="_blank" rel="noopener">More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2 class="center">Unique Experiences</h2>
+      <div class="grid">
+        <div class="experience">
+          <h3>Local bazaars</h3>
+          <p>Shop textiles, handicrafts and jewelry in lively markets like Johari and Bapu Bazaar.</p>
+        </div>
+        <div class="experience">
+          <h3>Rajasthani cuisine</h3>
+          <p>Try dal baati churma, ghevar and laal maas in authentic eateries.</p>
+        </div>
+        <div class="experience">
+          <h3>Cultural performances</h3>
+          <p>Evenings of folk music and dance give a glimpse into Rajasthani traditions.</p>
+        </div>
+        <div class="experience">
+          <h3>Ethical travel note</h3>
+          <p>Check welfare standards for animal-based attractions and prefer responsible tours.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container center" style="background:#fff;">
+      <h2>Plan Your Trip</h2>
+      <p class="kv">Need help? Contact us for a demo itinerary (stored locally in browser).</p>
+      <a class="btn" href="contact.html">Contact Us</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">&copy; <span id="year-jaipur"></span> Journey Junction</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year-jaipur').textContent=new Date().getFullYear();</script>
+</body>
+</html>

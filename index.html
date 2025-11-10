@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Journey Junction — Explore Rajasthan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/city.css"> <!-- keep city css for shared styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-inner container">
+      <div class="branding">
+        <a href="index.html" class="brand">
+          <img src="C:\Users\admin\Desktop\journeyjunction\images\logo.jpg" alt="Journey Junction" class="brand-logo">
+          <span class="brand-title">Journey Junction</span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="heritage.html">Heritage</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" style="background-image: url('../ C:\Users\admin\Desktop\journeyjunction\images\background 34.jpeg')">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner container">
+      <h1 class="hero-title">Explore the Royal Land of Rajasthan</h1>
+      <p class="hero-sub">Discover heritage cities, forts, lakes and deserts — curated guides for every traveller.</p>
+
+      <div class="hero-search">
+        <input id="citySearch" type="search" placeholder="Search a city (e.g. Jodhpur, Udaipur...)" aria-label="Search city">
+        <button id="searchBtn" type="button">Search</button>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#popular" class="btn-cta">Browse Popular Destinations</a>
+        <a href="heritage.html" class="btn-ghost">Heritage & Culture</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED STRIP -->
+  <section class="featured container" aria-label="Featured">
+    <div class="featured-track">
+      <img src="C:\Users\admin\Desktop\journeyjunction\images\udaipur3.jpeg" alt="Udaipur">
+      <img src="C:\Users\admin\Desktop\journeyjunction\images\HAWA MAHAL.jpg" alt="Hawa Mahal ">
+      <img src="C:\Users\admin\Desktop\journeyjunction\images\amber fort.jpeg.jpg" alt="Amber Fort">
+      <img src="C:\Users\admin\Desktop\journeyjunction\images\ajmer sharif.jpeg" alt="Ajmer Sharif">
+    </div>
+  </section>
+
+  <!-- POPULAR DESTINATIONS -->
+  <section id="popular" class="popular container">
+    <h2>Popular Destinations</h2>
+    <p class="section-sub">Handpicked places to inspire your next journey in Rajasthan.</p>
+
+    <div class="cards-grid">
+      <!-- Card: Jaipur -->
+      <article class="city-card">
+        <div class="card-img">
+          <img src="C:\Users\admin\Desktop\journeyjunction\images\HAWA MAHAL.jpg" alt="Jaipur">
+        </div>
+        <div class="card-body">
+          <h3>Jaipur</h3>
+          <p class="muted">The Pink City — royal palaces & bustling bazaars.</p>
+          <a class="btn-small" href="cities/jaipur.html">Explore Jaipur</a>
+        </div>
+      </article>
+
+      <!-- Udaipur -->
+      <article class="city-card">
+        <div class="card-img"><img src="C:\Users\admin\Desktop\journeyjunction\images\udaipur3.jpeg" alt="Udaipur"></div>
+        <div class="card-body">
+          <h3>Udaipur</h3>
+          <p class="muted">City of Lakes — palaces and serene boat rides.</p>
+          <a class="btn-small" href="cities/udaipur.html">Explore Udaipur</a>
+        </div>
+      </article>
+
+      <!-- Jodhpur -->
+      <article class="city-card">
+        <div class="card-img"><img src="C:\Users\admin\Desktop\journeyjunction\images\jodhpur city.jpeg.jpeg" alt="Jodhpur"></div>
+        <div class="card-body">
+          <h3>Jodhpur</h3>
+          <p class="muted">The Blue City — Mehrangarh Fort and historic streets.</p>
+          <a class="btn-small" href="cities/jodhpur.html">Explore Jodhpur</a>
+        </div>
+      </article>
+
+      <!-- Jaisalmer -->
+      <article class="city-card">
+        <div class="card-img"><img src="C:\Users\admin\Desktop\journeyjunction\images\jaisalmer.jpg" alt="Jaisalmer"></div>
+        <div class="card-body">
+          <h3>Jaisalmer</h3>
+          <p class="muted">Golden City — dunes, forts and desert safaris.</p>
+          <a class="btn-small" href="cities/jaisalmer.html">Explore Jaisalmer</a>
+        </div>
+      </article>
+
+      <!-- Ajmer -->
+      <article class="city-card">
+        <div class="card-img"><img src="C:\Users\admin\Desktop\journeyjunction\images\ajmercity.jpg" alt="Ajmer"></div>
+        <div class="card-body">
+          <h3>Ajmer</h3>
+          <p class="muted">Spiritual & historic — Ajmer Sharif & Ana Sagar.</p>
+          <a class="btn-small" href="cities/ajmer.html">Explore Ajmer</a>
+        </div>
+      </article>
+
+      <!-- Mount Abu -->
+      <article class="city-card">
+        <div class="card-img"><img src="C:\Users\admin\Desktop\journeyjunction\images\mount2.jpg" alt="Mount Abu"></div>
+        <div class="card-body">
+          <h3>Mount Abu</h3>
+          <p class="muted">Hill station — lakes, temples and cool air.</p>
+          <a class="btn-small" href="cities/mount-abu.html">Explore Mount Abu</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT RAJASTHAN (KEEP THIS) -->
+  <section class="about container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>About Rajasthan</h2>
+        <p><strong>Rajasthan</strong>, the Land of Kings, is India's largest state. It's famous for majestic forts and palaces, colorful festivals, and a rich craft heritage. From Jaipur’s pink palaces to Jaisalmer’s golden dunes, each city has its own story.</p>
+
+        <h3>History in brief</h3>
+        <p>Once a collection of Rajput kingdoms and princely states, Rajasthan's history is marked by valor, art patronage, and royal architecture. Forts like Amber and Mehrangarh stand as witnesses to centuries of culture and craftsmanship.</p>
+
+        <h3>Culture & Traditions</h3>
+        <p>Rajasthan boasts vibrant folk dances (Ghoomar, Kalbeliyya), soulful music (Sarangi, Dhol), and handicrafts like block-printing, blue pottery, and miniature paintings.</p>
+      </div>
+
+      <div class="about-visual">
+        <img src="C:\Users\admin\Desktop\journeyjunction\images\overview.jpeg" alt="Rajasthan overview">
+      </div>
+    </div>
+  </section>
+
+  <!-- HERITAGE & CULTURE (KEEP THIS EXACT CONTENT) -->
+  <section class="heritage container">
+    <div class="heritage-card">
+      <div class="heritage-text">
+        <h2>Heritage & Culture</h2>
+        <p>Experience folk dances, royal traditions, and local flavors. Dive into crafts, festivals, and the living heritage that shapes Rajasthan.</p>
+        <a href="heritage.html" class="link">Learn More</a>
+      </div>
+      <div class="heritage-media"><img src="C:\Users\admin\Desktop\journeyjunction\images\rj clture.jpeg" alt="Heritage dance"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Journey Junction | Designed by Om Pandey</p>
+    </div>
+  </footer>
+
+  <!-- Simple JS: search & small UI behaviors -->
+  <script>
+    // List of cities and target pages (lowercase keys)
+    const CITY_MAP = {
+      "jaipur": "cities/jaipur.html",
+      "udaipur": "cities/udaipur.html",
+      "jodhpur": "cities/jodhpur.html",
+      "jaisalmer": "cities/jaisalmer.html",
+      "ajmer": "cities/ajmer.html",
+      "mount abu": "cities/mount-abu.html",
+      "mount-abu": "cities/mount-abu.html",
+      "mountabu": "cities/mount-abu.html"
+    };
+
+    const searchInput = document.getElementById('citySearch');
+    const searchBtn = document.getElementById('searchBtn');
+
+    function searchCity() {
+      const q = searchInput.value.trim().toLowerCase();
+      if (!q) { searchInput.focus(); return; }
+      // try exact match then partial
+      if (CITY_MAP[q]) {
+        window.location.href = CITY_MAP[q];
+        return;
+      }
+      // partial match
+      for (const key of Object.keys(CITY_MAP)) {
+        if (key.includes(q)) { window.location.href = CITY_MAP[key]; return; }
+      }
+      // No match: simple UI feedback
+      searchInput.style.animation = 'shake .36s';
+      setTimeout(()=> searchInput.style.animation = '', 400);
+      alert('No matching city found. Try: Jaipur, Udaipur, Jodhpur, Jaisalmer, Ajmer, Mount Abu');
+    }
+
+    searchBtn.addEventListener('click', searchCity);
+    searchInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') searchCity(); });
+
+    // featured auto-scroll (gentle)
+    const track = document.querySelector('.featured-track');
+    if (track) {
+      let scrollPos = 0;
+      setInterval(() => {
+        scrollPos += 2;
+        if (scrollPos > track.scrollWidth/2) scrollPos = 0;
+        track.scrollTo({ left: scrollPos, behavior: 'smooth' });
+      }, 2200);
+    }
+  </script>
+
+</body>
+</html>
